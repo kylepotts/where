@@ -1,0 +1,22 @@
+{
+  "name": "public",
+  "version": "0.0.0",
+  "authors": [
+    "Kyle <kyle@kptechblog.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pure": "~0.6.0",
+    "geolocator": "~1.2.9"
+  }
+}

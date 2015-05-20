@@ -1,0 +1,28 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #34495E;
+}
+
+.commentBox {
+  color: white;
+}
+
+#left {
+  background-color: #FC6E51;
+  text-align: center;
+  overflow: scroll;
+  height: 100%;
+}
+
+#user_image {
+  float: left;
+  margin: 0px 0px 15px 15px;
+}
+
+#user_header {
+  float: left;
+  margin: 0px 0px 15px 15px;
+}

@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "pure": "~0.6.0",
-    "geolocator": "~1.2.9"
+    "geolocator": "~1.2.9",
+    "bootstrap": "~3.3.4"
   }
 }

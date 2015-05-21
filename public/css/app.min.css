@@ -1,1 +1,1 @@
-body,html{height:100%;margin:0;overflow:hidden;background-color:#34495E}.commentBox{color:#fff}#left{background-color:#FC6E51;text-align:center;overflow:scroll;height:100%}#user_header,#user_image{float:left;margin:0 0 15px 15px}
+body,html{height:100%;margin:0;overflow:hidden;background-color:#34495E;font-family:Droid Sans}.commentBox{color:#fff}#left{background-color:#2980B9;text-align:center;overflow:scroll;height:100%}.tweet-wrapper{margin:0}.userimage{margin-right:10px}.imageCol{margin-top:2px;margin-bottom:2px}.textCol{width:60%;margin-top:10px}

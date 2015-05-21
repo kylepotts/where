@@ -1,4 +1,6 @@
 $flat-grey:#34495E;
+$flat-blue: #2980B9;
+$fonts: Droid Sans;
 
 html,
 body {
@@ -6,6 +8,7 @@ body {
   margin: 0;
   overflow: hidden;
   background-color: $flat-grey;
+  font-family:$fonts;
 }
 
 .commentBox {
@@ -13,18 +16,28 @@ body {
 }
 
 #left {
-  background-color: #FC6E51;
+  background-color:$flat-blue;
   text-align: center;
   overflow: scroll;
   height:100%;
 }
 
-#user_image{
-  float: left;
-  margin: 0px 0px 15px 15px
+
+.tweet-wrapper{
+  margin:0px;
 }
 
-#user_header{
-  float: left;
-  margin: 0px 0px 15px 15px
+.userimage{
+  margin-right:10px;
+}
+
+.imageCol{
+  margin-top:2px;
+  margin-bottom: 2px;
+
+}
+
+.textCol{
+  width:60%;
+  margin-top:10px;
 }

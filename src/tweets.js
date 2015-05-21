@@ -1,4 +1,5 @@
 var Twit = require('twit');
+var pauseable = require('pauseable');
 var T = new Twit({
   consumer_key:'XB0o3QaDapYFRO2jVVX1WWjke',
   consumer_secret:'LszGTJLkM1ofG9I7w6GLV2kCETkhWlHTIzHt6oLE4E6GIXUKX0',
@@ -8,12 +9,16 @@ var T = new Twit({
 
 
 
-function getTweets(io){
-  var sanFrancisco = [ '-122.75', '36.8', '-121.75', '37.8' ];
-  var stream = T.stream('statuses/filter', { locations: sanFrancisco });
+function getTweets(io,boundingBox){
+  var stream = T.stream('statuses/filter', { locations: boundingBox });
   stream.on('tweet',function(tweet){
     io.emit('new tweet',tweet);
+    pauseable.pause(stream);
   });
+
+  setInterval(function(){
+    pauseable.resume(stream);
+  },1000);
 }
 
 module.exports.getTweets = getTweets;

@@ -4,6 +4,7 @@ body {
   margin: 0;
   overflow: hidden;
   background-color: #34495E;
+  font-family: Droid Sans;
 }
 
 .commentBox {
@@ -11,18 +12,26 @@ body {
 }
 
 #left {
-  background-color: #FC6E51;
+  background-color: #2980B9;
   text-align: center;
   overflow: scroll;
   height: 100%;
 }
 
-#user_image {
-  float: left;
-  margin: 0px 0px 15px 15px;
+.tweet-wrapper {
+  margin: 0px;
 }
 
-#user_header {
-  float: left;
-  margin: 0px 0px 15px 15px;
+.userimage {
+  margin-right: 10px;
+}
+
+.imageCol {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.textCol {
+  width: 60%;
+  margin-top: 10px;
 }
